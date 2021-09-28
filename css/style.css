@@ -1,0 +1,242 @@
+:root {
+    --bg-color: #f1f4f9;
+    --btn-bckground: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_logo {
+    width: 50px;
+    height: 40px;
+}
+
+.logo_text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav_icons img {
+    width: 25px;
+}
+
+.top_nav {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+.top_nav-text h5,
+.top_nav-text p {
+    margin-bottom: 0;
+}
+
+.call_section img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.box {
+    display: inline-block;
+    border: 3px solid var(--btn-bckground);
+    width: 94px;
+    height: 98px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box1 img {
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.scroll_divs {
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+.scroll_divs::-webkit-scrollbar {
+    display: none;
+}
+
+.footer_section {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+.footer_icon-text {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.box2 img {
+    width: 25px;
+}
+
+.btn_custom {
+    background: var(--btn-bckground);
+    border: none;
+    border-radius: 100px;
+    height: 50px;
+}
+
+@media (max-width: 320px) {
+    .call_section {
+        width: 78%;
+        border-radius: 15px;
+        padding: 0;
+        position: relative;
+        left: 0px;
+    }
+    .scroll_divs {
+        position: relative;
+        bottom: 0px !important;
+    }
+    .top_nav-text h5,
+    .top_nav-text p {
+        font-size: 8px !important;
+    }
+    .box2 img {
+        width: 20px;
+    }
+    .btn_custom {
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .nav_icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav_icons button {
+        margin: 0px 4px;
+    }
+}
+
+@media (max-width: 400px) {
+    .box {
+        width: 88px !important;
+        height: 90px !important;
+    }
+    .box2 {
+        padding: 0px 10px;
+    }
+    .top_nav-text {
+        padding-top: 5px
+    }
+    .top_nav-text h5 {
+        font-size: 15px;
+    }
+    .top_nav-text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 570px) {
+    .call_section {
+        width: 100%;
+        border-radius: 15px;
+        padding: 0;
+    }
+    .top_nav-text {
+        padding-top: 5px
+    }
+    .top_nav-text h5 {
+        font-size: 15px;
+    }
+    .top_nav-text p {
+        font-size: 10px;
+    }
+    .nav_icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav_icons button {
+        margin: 0px 4px;
+    }
+}
+
+@media (max-width: 760px) {
+    .mobile_card {
+        display: flex;
+        overflow-x: auto;
+    }
+    .mobile_card>.row {
+        width: 142px;
+        height: 110px;
+        flex: 0 0 auto;
+    }
+    .top_logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .call_section img {
+        width: 45rem;
+        border-radius: 15px;
+    }
+    .box {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 990px) {
+    .box {
+        width: 94px;
+        height: 98px;
+    }
+    .top_nav-text h5 {
+        padding-top: 4px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav_icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav_icons>button:nth-child(2) {
+        margin-left: 10px;
+    }
+    .navbar-brand {
+        padding: 0px 31px;
+    }
+    .top_nav-text h5 {
+        padding-top: 4px;
+    }
+    .call_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .call_section img {
+        width: 85%;
+        border-radius: 15px;
+    }
+    .scroll_divs {
+        max-height: 460px;
+        overflow-y: auto;
+        position: relative;
+        right: 70px;
+    }
+    .box {
+        width: 220px;
+        height: 136px;
+    }
+    .box img {
+        width: 100%;
+        height: 136px;
+    }
+    .footer_section {
+        width: 89%;
+        position: relative;
+        left: 53px;
+    }
+}
